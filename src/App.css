@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Exo 2';
+  src: url('./fonts/Exo2.0-Thin.otf');
+}
+/* @import url('https://fonts.googleapis.com/css?family=Exo+2:300'); */
+
+header{
+  margin-top: 40px;
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  color: #ffffff;
+}

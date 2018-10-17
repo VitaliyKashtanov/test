@@ -1,0 +1,120 @@
+.cat{
+  margin-top: 40px;
+  width: 320px;
+  height: 480px;
+  position: relative;
+  /* background: #1698d9; */
+  background:linear-gradient(135deg, transparent 30px, #1698d9 0);
+}
+.cat:hover{
+  cursor: pointer;
+}
+
+.cat_selected{
+  background:linear-gradient(135deg, transparent 30px, #d91667 0);
+}
+
+.cat_disable{
+  background:linear-gradient(135deg, transparent 30px, #b3b3b3 0);
+  user-select: none;
+}
+.cat_disable::after{
+  content: '';
+  position: relative;
+  display: block;
+  z-index: 10;
+  top: -517px;
+  left: 0;
+  width: 320px;
+  height: 480px;
+  background:linear-gradient(135deg, transparent 30px, #b3b3b3 0);
+  opacity: .5;
+}
+.cat_disable:hover{
+  cursor: not-allowed;
+}
+
+.cat_inner{
+  margin: auto;
+  margin-top: 5px;
+  width: 310px;
+  height: 470px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  background:linear-gradient(135deg, transparent 29px, #fff 0);
+  text-align: left;
+  text-indent: 40px;
+}
+
+.cat_img{
+  position: relative;
+  bottom: -20px;
+  left: -30px;
+}
+
+.cat_weight{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1698d9;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #ffffff;
+  font-size: 42px;
+}
+.cat_weight_selected{
+  background-color: #d91667;
+}
+.cat_weight_disable{
+  background-color: #b3b3b3;
+}
+
+.cat_weight span:first-of-type{
+  font-size: 42px;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  margin-left: -40px;
+}
+.cat_weight span:last-of-type{
+  font-size: 21px;
+  display: block;
+  margin-top: -8px;
+  margin-left: -10px;
+}
+
+.cat_header{
+  font-size: 16px;
+  display: block;
+  margin-top: 25px;
+}
+.cat_title{
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
+}
+.cat_description{
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+.cat_portions, .cat_present{
+  font-size: 14px;
+  display: block;
+}
+.cat_portions{
+  margin-top: 10px;
+}
+
+.cat_sub_info{
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.overlay_disable{
+  background:linear-gradient(135deg, transparent 30px, #b3b3b3 0);
+}
